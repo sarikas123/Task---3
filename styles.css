@@ -1,0 +1,88 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+#app {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(27, 15, 15); /* Adding border to the whole app */
+    border-radius: 5px; /* Adding border radius for rounded corners */
+}
+
+/* Input and button styles */
+#taskInput {
+    width: calc(100% - 100px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 0.5px solid #ccc;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #45a049;
+}
+
+/* Task list styles */
+#taskList {
+    list-style-type: none;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px; /* Adding border radius for rounded corners */
+    margin-bottom: 5px; /* Adding margin between task items */
+    transition: background-color 0.3s; /* Adding transition for hover effect */
+    border: 1px solid #ddd; /* Adding border */
+}
+
+.taskItem:last-child {
+    border-bottom: none;
+}
+
+.taskItem:hover {
+    background-color: #f5f5f5; /* Adding hover effect */
+}
+
+/* Delete and Edit button styles */
+.button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.deleteButton:hover {
+    background-color: #da190b;
+}
+
+.editButton {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+
+.editButton:hover {
+    background-color: #005f79;
+}
